@@ -1,0 +1,14 @@
+{
+  "name": "nwn-stats",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Node.js NWN Statistics website using Docker",
+  "author": "Jakob Knutsen <jakobknutsen@gmail.com>",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "dependencies": {
+    "express": "x",
+    "chart.js": "x"
+  }
+}

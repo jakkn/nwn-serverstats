@@ -1,0 +1,11 @@
+web:
+  build: .
+  volumes:
+    - ./src:/usr/src/app/src
+  working_dir: /usr/src/app/src
+  environment:
+    - NODE_PATH=/usr/src/app
+  ports:
+    - "3000:3000"
+  expose:
+    - "3000"
