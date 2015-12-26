@@ -5,7 +5,7 @@
   "description": "Node.js NWN Statistics website using Docker",
   "author": "Jakob Knutsen <jakobknutsen@gmail.com>",
   "scripts": {
-    "start": "nodemon ./index.js"
+    "start": "nodemon ./app.js"
   },
   "dependencies": {
     "express": "x",
