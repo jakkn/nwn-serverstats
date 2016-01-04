@@ -9,4 +9,4 @@ COPY ./src/package.json /usr/src/app/package.json
 WORKDIR /usr/src/app
 RUN npm install
 
-CMD ["nodemon", "app.js"]
+CMD ["npm", "start"]
