@@ -1,5 +1,5 @@
 {
-  "name": "nwn-stats",
+  "name": "nwn-serverstats",
   "private": true,
   "description": "Node.js NWN Statistics website",
   "author": "Jakob Knutsen <jakobknutsen@gmail.com>",
@@ -9,5 +9,8 @@
   "dependencies": {
     "express": "4.13.x",
     "chart.js": "1.0.x"
+  },
+  "devDependencies": {
+    "nodemon": "1.8.x"
   }
 }
