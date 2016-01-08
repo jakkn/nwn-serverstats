@@ -1,13 +1,35 @@
 web:
   build: .
+
   volumes:
     - ./src:/usr/src/app
   working_dir: /usr/src/app
+
   environment:
     - NODE_PATH=/install/node_modules
     - NODE_ENV=development
-  entrypoint: npm start
+
+  restart: always
+  stdin_open: true
+  tty: true
+
   ports:
     - "3000:3000"
   expose:
     - "3000"
+
+dev:
+  image: nwnserverstats_web
+
+  volumes:
+    - ./src:/usr/src/app
+  working_dir: /usr/src/app
+
+  command: node
+  environment:
+    - NODE_PATH=/install/node_modules
+    - NODE_ENV=development
+
+  restart: always
+  stdin_open: true
+  tty: true
