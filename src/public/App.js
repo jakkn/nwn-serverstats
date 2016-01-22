@@ -1,7 +1,21 @@
-// Get the context of the canvas element we want to select
-var ctx = document.getElementById("chart").getContext("2d");
+import React, { Component } from 'react';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Server statistics</h1>
+        <LineChart data={chartData} options={chartOptions} width="600" height="250"/>
+      </div>
+    );
+  }
+}
+
+var LineChart = require("rc-chartjs").Line;
+var chartOptions = {};
+
 // dummy data
-var data = {
+var chartData = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [{
     label: "My First dataset",
@@ -23,4 +37,3 @@ var data = {
     data: [28, 48, 40, 19, 86, 27, 90]
   }]
 };
-var lineChart = new Chart(ctx).Line(data);

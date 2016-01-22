@@ -1,3 +1,9 @@
+# Node & npm #
+###################
+node_modules
+npm-debug.log
+dist
+
 # Editor files #
 ###################
 *.swp

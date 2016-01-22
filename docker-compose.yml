@@ -8,6 +8,7 @@ web:
   environment:
     - NODE_PATH=/install/node_modules
     - NODE_ENV=development
+  command: npm start
 
   restart: always
   stdin_open: true
@@ -25,10 +26,10 @@ dev:
     - ./src:/usr/src/app
   working_dir: /usr/src/app
 
-  command: node
   environment:
     - NODE_PATH=/install/node_modules
     - NODE_ENV=development
+  command: node
 
   restart: always
   stdin_open: true
